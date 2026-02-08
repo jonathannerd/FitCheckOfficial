@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A30FCD82DE7C94000DE96CE /* tshirt.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCD72DE7C94000DE96CE /* tshirt.glb */; };
+		4A30FCDA2DE7C98700DE96CE /* sneakers.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCD92DE7C98700DE96CE /* sneakers.glb */; };
+		4A30FCDC2DE7CA4700DE96CE /* slim_jeans.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCDB2DE7CA4700DE96CE /* slim_jeans.glb */; };
+		4A30FCE02DE7CB9B00DE96CE /* jeans.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCDE2DE7CB9B00DE96CE /* jeans.glb */; };
+		4A30FCE12DE7CB9B00DE96CE /* sweater.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCDF2DE7CB9B00DE96CE /* sweater.glb */; };
+		4A30FCE22DE7CB9B00DE96CE /* boots.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCDD2DE7CB9B00DE96CE /* boots.glb */; };
+		4A30FCE42DE7CCAD00DE96CE /* suit.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCE32DE7CCAD00DE96CE /* suit.glb */; };
+		4A30FCE72DE7CCB300DE96CE /* dress_pants.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCE52DE7CCB300DE96CE /* dress_pants.glb */; };
+		4A30FCE82DE7CCB300DE96CE /* dress_shoes.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCE62DE7CCB300DE96CE /* dress_shoes.glb */; };
+		4A30FCEC2DECDE9800DE96CE /* coat.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCEA2DECDE9800DE96CE /* coat.glb */; };
+		4A30FCED2DECDE9800DE96CE /* cargo_pants.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCE92DECDE9800DE96CE /* cargo_pants.glb */; };
+		4A30FCEE2DECDE9800DE96CE /* running_shoes.glb in Resources */ = {isa = PBXBuildFile; fileRef = 4A30FCEB2DECDE9800DE96CE /* running_shoes.glb */; };
+		4A3E22B52DD22C7D00773707 /* FitAdvisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E22B42DD22C6C00773707 /* FitAdvisor.swift */; };
+		4A3E22B72DDA6F1900773707 /* GarmentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E22B62DDA6F0F00773707 /* GarmentProcessor.swift */; };
+		4A3E22B92DDA715600773707 /* GarmentTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E22B82DDA714D00773707 /* GarmentTexture.swift */; };
+		4A3E22BB2DDA725500773707 /* ClothingIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E22BA2DDA724900773707 /* ClothingIndex.swift */; };
+		4A3E22D82DE4A2B800773707 /* GenerateSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3E22D72DE4A2AF00773707 /* GenerateSignature.swift */; };
+		4ABC724B2DBB211B008D9EC2 /* GLTFKit2 in Frameworks */ = {isa = PBXBuildFile; productRef = 4ABC724A2DBB211B008D9EC2 /* GLTFKit2 */; };
+		4ABC737E2DC563D5008D9EC2 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC736E2DC563C3008D9EC2 /* Animations.swift */; };
+		4ABC737F2DC563DD008D9EC2 /* AppEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC736F2DC563C3008D9EC2 /* AppEntryView.swift */; };
+		4ABC73802DC563E2008D9EC2 /* AvatarEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73712DC563C3008D9EC2 /* AvatarEditorView.swift */; };
+		4ABC73812DC563E7008D9EC2 /* AvatarMesurments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73722DC563C3008D9EC2 /* AvatarMesurments.swift */; };
+		4ABC73822DC563EB008D9EC2 /* AvatarWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73732DC563C3008D9EC2 /* AvatarWebView.swift */; };
+		4ABC73832DC563F0008D9EC2 /* ClosetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73742DC563C3008D9EC2 /* ClosetView.swift */; };
+		4ABC73842DC563F4008D9EC2 /* ClothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73752DC563C3008D9EC2 /* ClothingItem.swift */; };
+		4ABC73852DC563FB008D9EC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73762DC563C3008D9EC2 /* ContentView.swift */; };
+		4ABC73862DC56400008D9EC2 /* FitCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73772DC563C3008D9EC2 /* FitCheckApp.swift */; };
+		4ABC73872DC56405008D9EC2 /* GenderSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73782DC563C3008D9EC2 /* GenderSelectionView.swift */; };
+		4ABC73882DC5640A008D9EC2 /* SceneKitContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC73792DC563C3008D9EC2 /* SceneKitContainer.swift */; };
+		4ABC73892DC56410008D9EC2 /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC737A2DC563C3008D9EC2 /* ShoppingView.swift */; };
+		4ABC738A2DC56414008D9EC2 /* SidebarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC737B2DC563C3008D9EC2 /* SidebarButton.swift */; };
+		4ABC738B2DC56418008D9EC2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC737C2DC563C3008D9EC2 /* UserModel.swift */; };
+		4ABC738C2DC56445008D9EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73702DC563C3008D9EC2 /* Assets.xcassets */; };
+		4ABC73D22DCB9505008D9EC2 /* Idle_male.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73D12DCB9505008D9EC2 /* Idle_male.dae */; };
+		4ABC73D42DCB9587008D9EC2 /* Idle_female.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73D32DCB9587008D9EC2 /* Idle_female.dae */; };
+		4ABC73D62DCB968E008D9EC2 /* Sitting_male.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73D52DCB968E008D9EC2 /* Sitting_male.dae */; };
+		4ABC73D82DCB9710008D9EC2 /* Sitting_female.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73D72DCB9710008D9EC2 /* Sitting_female.dae */; };
+		4ABC73DA2DCB9E3D008D9EC2 /* Waving_female.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73D92DCB9E3D008D9EC2 /* Waving_female.dae */; };
+		4ABC73DC2DCB9EC6008D9EC2 /* Waving_male.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73DB2DCB9EC6008D9EC2 /* Waving_male.dae */; };
+		4ABC73DE2DCBB0B4008D9EC2 /* Running_male.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73DD2DCBB0B4008D9EC2 /* Running_male.dae */; };
+		4ABC73E02DCBB0ED008D9EC2 /* Running_female.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73DF2DCBB0ED008D9EC2 /* Running_female.dae */; };
+		4ABC73E22DCBB116008D9EC2 /* Walking_female.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73E12DCBB116008D9EC2 /* Walking_female.dae */; };
+		4ABC73E42DCBB142008D9EC2 /* Walking_male.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4ABC73E32DCBB142008D9EC2 /* Walking_male.dae */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A30FCD72DE7C94000DE96CE /* tshirt.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = tshirt.glb; sourceTree = "<group>"; };
+		4A30FCD92DE7C98700DE96CE /* sneakers.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = sneakers.glb; sourceTree = "<group>"; };
+		4A30FCDB2DE7CA4700DE96CE /* slim_jeans.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = slim_jeans.glb; sourceTree = "<group>"; };
+		4A30FCDD2DE7CB9B00DE96CE /* boots.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = boots.glb; sourceTree = "<group>"; };
+		4A30FCDE2DE7CB9B00DE96CE /* jeans.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = jeans.glb; sourceTree = "<group>"; };
+		4A30FCDF2DE7CB9B00DE96CE /* sweater.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = sweater.glb; sourceTree = "<group>"; };
+		4A30FCE32DE7CCAD00DE96CE /* suit.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = suit.glb; sourceTree = "<group>"; };
+		4A30FCE52DE7CCB300DE96CE /* dress_pants.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = dress_pants.glb; sourceTree = "<group>"; };
+		4A30FCE62DE7CCB300DE96CE /* dress_shoes.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = dress_shoes.glb; sourceTree = "<group>"; };
+		4A30FCE92DECDE9800DE96CE /* cargo_pants.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = cargo_pants.glb; sourceTree = "<group>"; };
+		4A30FCEA2DECDE9800DE96CE /* coat.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = coat.glb; sourceTree = "<group>"; };
+		4A30FCEB2DECDE9800DE96CE /* running_shoes.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = running_shoes.glb; sourceTree = "<group>"; };
+		4A30FCF12DECF49F00DE96CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4A3E22B42DD22C6C00773707 /* FitAdvisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitAdvisor.swift; sourceTree = "<group>"; };
+		4A3E22B62DDA6F0F00773707 /* GarmentProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentProcessor.swift; sourceTree = "<group>"; };
+		4A3E22B82DDA714D00773707 /* GarmentTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentTexture.swift; sourceTree = "<group>"; };
+		4A3E22BA2DDA724900773707 /* ClothingIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingIndex.swift; sourceTree = "<group>"; };
+		4A3E22D72DE4A2AF00773707 /* GenerateSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSignature.swift; sourceTree = "<group>"; };
+		4ABC736B2DC563C3008D9EC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4ABC736E2DC563C3008D9EC2 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		4ABC736F2DC563C3008D9EC2 /* AppEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryView.swift; sourceTree = "<group>"; };
+		4ABC73702DC563C3008D9EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ABC73712DC563C3008D9EC2 /* AvatarEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarEditorView.swift; sourceTree = "<group>"; };
+		4ABC73722DC563C3008D9EC2 /* AvatarMesurments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarMesurments.swift; sourceTree = "<group>"; };
+		4ABC73732DC563C3008D9EC2 /* AvatarWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarWebView.swift; sourceTree = "<group>"; };
+		4ABC73742DC563C3008D9EC2 /* ClosetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetView.swift; sourceTree = "<group>"; };
+		4ABC73752DC563C3008D9EC2 /* ClothingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingItem.swift; sourceTree = "<group>"; };
+		4ABC73762DC563C3008D9EC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4ABC73772DC563C3008D9EC2 /* FitCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitCheckApp.swift; sourceTree = "<group>"; };
+		4ABC73782DC563C3008D9EC2 /* GenderSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSelectionView.swift; sourceTree = "<group>"; };
+		4ABC73792DC563C3008D9EC2 /* SceneKitContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitContainer.swift; sourceTree = "<group>"; };
+		4ABC737A2DC563C3008D9EC2 /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
+		4ABC737B2DC563C3008D9EC2 /* SidebarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarButton.swift; sourceTree = "<group>"; };
+		4ABC737C2DC563C3008D9EC2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4ABC73D12DCB9505008D9EC2 /* Idle_male.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Idle_male.dae; sourceTree = "<group>"; };
+		4ABC73D32DCB9587008D9EC2 /* Idle_female.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Idle_female.dae; sourceTree = "<group>"; };
+		4ABC73D52DCB968E008D9EC2 /* Sitting_male.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Sitting_male.dae; sourceTree = "<group>"; };
+		4ABC73D72DCB9710008D9EC2 /* Sitting_female.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Sitting_female.dae; sourceTree = "<group>"; };
+		4ABC73D92DCB9E3D008D9EC2 /* Waving_female.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Waving_female.dae; sourceTree = "<group>"; };
+		4ABC73DB2DCB9EC6008D9EC2 /* Waving_male.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Waving_male.dae; sourceTree = "<group>"; };
+		4ABC73DD2DCBB0B4008D9EC2 /* Running_male.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Running_male.dae; sourceTree = "<group>"; };
+		4ABC73DF2DCBB0ED008D9EC2 /* Running_female.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Running_female.dae; sourceTree = "<group>"; };
+		4ABC73E12DCBB116008D9EC2 /* Walking_female.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Walking_female.dae; sourceTree = "<group>"; };
+		4ABC73E32DCBB142008D9EC2 /* Walking_male.dae */ = {isa = PBXFileReference; lastKnownFileType = text.xml.dae; path = Walking_male.dae; sourceTree = "<group>"; };
+		4ABFE0C02D76A9F70070F0AF /* FitCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AB8EA062D6B88EF00B249A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABC724B2DBB211B008D9EC2 /* GLTFKit2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AB8EA002D6B88EF00B249A5 = {
+			isa = PBXGroup;
+			children = (
+				4ABC737D2DC563C3008D9EC2 /* FitCheck */,
+				4ABFE0C02D76A9F70070F0AF /* FitCheck.app */,
+				4ABC72232DBB152D008D9EC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4ABC72232DBB152D008D9EC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4ABC736C2DC563C3008D9EC2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4ABC736B2DC563C3008D9EC2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4ABC736D2DC563C3008D9EC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4ABC73D12DCB9505008D9EC2 /* Idle_male.dae */,
+				4ABC73D32DCB9587008D9EC2 /* Idle_female.dae */,
+				4ABC73D52DCB968E008D9EC2 /* Sitting_male.dae */,
+				4ABC73D72DCB9710008D9EC2 /* Sitting_female.dae */,
+				4ABC73D92DCB9E3D008D9EC2 /* Waving_female.dae */,
+				4ABC73DB2DCB9EC6008D9EC2 /* Waving_male.dae */,
+				4ABC73DD2DCBB0B4008D9EC2 /* Running_male.dae */,
+				4ABC73DF2DCBB0ED008D9EC2 /* Running_female.dae */,
+				4ABC73E12DCBB116008D9EC2 /* Walking_female.dae */,
+				4ABC73E32DCBB142008D9EC2 /* Walking_male.dae */,
+				4A30FCD72DE7C94000DE96CE /* tshirt.glb */,
+				4A30FCD92DE7C98700DE96CE /* sneakers.glb */,
+				4A30FCDB2DE7CA4700DE96CE /* slim_jeans.glb */,
+				4A30FCDD2DE7CB9B00DE96CE /* boots.glb */,
+				4A30FCDE2DE7CB9B00DE96CE /* jeans.glb */,
+				4A30FCDF2DE7CB9B00DE96CE /* sweater.glb */,
+				4A30FCE32DE7CCAD00DE96CE /* suit.glb */,
+				4A30FCE52DE7CCB300DE96CE /* dress_pants.glb */,
+				4A30FCE62DE7CCB300DE96CE /* dress_shoes.glb */,
+				4A30FCE92DECDE9800DE96CE /* cargo_pants.glb */,
+				4A30FCEA2DECDE9800DE96CE /* coat.glb */,
+				4A30FCEB2DECDE9800DE96CE /* running_shoes.glb */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4ABC737D2DC563C3008D9EC2 /* FitCheck */ = {
+			isa = PBXGroup;
+			children = (
+				4A30FCF12DECF49F00DE96CE /* Info.plist */,
+				4A3E22D72DE4A2AF00773707 /* GenerateSignature.swift */,
+				4A3E22BA2DDA724900773707 /* ClothingIndex.swift */,
+				4A3E22B82DDA714D00773707 /* GarmentTexture.swift */,
+				4A3E22B62DDA6F0F00773707 /* GarmentProcessor.swift */,
+				4A3E22B42DD22C6C00773707 /* FitAdvisor.swift */,
+				4ABC736C2DC563C3008D9EC2 /* Preview Content */,
+				4ABC736D2DC563C3008D9EC2 /* Resources */,
+				4ABC736E2DC563C3008D9EC2 /* Animations.swift */,
+				4ABC736F2DC563C3008D9EC2 /* AppEntryView.swift */,
+				4ABC73702DC563C3008D9EC2 /* Assets.xcassets */,
+				4ABC73712DC563C3008D9EC2 /* AvatarEditorView.swift */,
+				4ABC73722DC563C3008D9EC2 /* AvatarMesurments.swift */,
+				4ABC73732DC563C3008D9EC2 /* AvatarWebView.swift */,
+				4ABC73742DC563C3008D9EC2 /* ClosetView.swift */,
+				4ABC73752DC563C3008D9EC2 /* ClothingItem.swift */,
+				4ABC73762DC563C3008D9EC2 /* ContentView.swift */,
+				4ABC73772DC563C3008D9EC2 /* FitCheckApp.swift */,
+				4ABC73782DC563C3008D9EC2 /* GenderSelectionView.swift */,
+				4ABC73792DC563C3008D9EC2 /* SceneKitContainer.swift */,
+				4ABC737A2DC563C3008D9EC2 /* ShoppingView.swift */,
+				4ABC737B2DC563C3008D9EC2 /* SidebarButton.swift */,
+				4ABC737C2DC563C3008D9EC2 /* UserModel.swift */,
+			);
+			path = FitCheck;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AB8EA082D6B88EF00B249A5 /* FitCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AB8EA172D6B88F100B249A5 /* Build configuration list for PBXNativeTarget "FitCheck" */;
+			buildPhases = (
+				4AB8EA052D6B88EF00B249A5 /* Sources */,
+				4AB8EA062D6B88EF00B249A5 /* Frameworks */,
+				4AB8EA072D6B88EF00B249A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitCheck;
+			packageProductDependencies = (
+				4ABC724A2DBB211B008D9EC2 /* GLTFKit2 */,
+			);
+			productName = FitCheck;
+			productReference = 4ABFE0C02D76A9F70070F0AF /* FitCheck.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AB8EA012D6B88EF00B249A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4AB8EA082D6B88EF00B249A5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 4AB8EA042D6B88EF00B249A5 /* Build configuration list for PBXProject "FitCheck" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AB8EA002D6B88EF00B249A5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4ABC72492DBB211B008D9EC2 /* XCRemoteSwiftPackageReference "GLTFKit2" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4AB8EA002D6B88EF00B249A5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AB8EA082D6B88EF00B249A5 /* FitCheck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AB8EA072D6B88EF00B249A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABC73E22DCBB116008D9EC2 /* Walking_female.dae in Resources */,
+				4ABC73E42DCBB142008D9EC2 /* Walking_male.dae in Resources */,
+				4ABC73D62DCB968E008D9EC2 /* Sitting_male.dae in Resources */,
+				4A30FCD82DE7C94000DE96CE /* tshirt.glb in Resources */,
+				4ABC73E02DCBB0ED008D9EC2 /* Running_female.dae in Resources */,
+				4ABC738C2DC56445008D9EC2 /* Assets.xcassets in Resources */,
+				4A30FCE02DE7CB9B00DE96CE /* jeans.glb in Resources */,
+				4A30FCE12DE7CB9B00DE96CE /* sweater.glb in Resources */,
+				4A30FCE42DE7CCAD00DE96CE /* suit.glb in Resources */,
+				4A30FCE22DE7CB9B00DE96CE /* boots.glb in Resources */,
+				4ABC73DA2DCB9E3D008D9EC2 /* Waving_female.dae in Resources */,
+				4ABC73D42DCB9587008D9EC2 /* Idle_female.dae in Resources */,
+				4A30FCDC2DE7CA4700DE96CE /* slim_jeans.glb in Resources */,
+				4ABC73D22DCB9505008D9EC2 /* Idle_male.dae in Resources */,
+				4A30FCEC2DECDE9800DE96CE /* coat.glb in Resources */,
+				4A30FCED2DECDE9800DE96CE /* cargo_pants.glb in Resources */,
+				4A30FCEE2DECDE9800DE96CE /* running_shoes.glb in Resources */,
+				4ABC73DC2DCB9EC6008D9EC2 /* Waving_male.dae in Resources */,
+				4A30FCE72DE7CCB300DE96CE /* dress_pants.glb in Resources */,
+				4A30FCE82DE7CCB300DE96CE /* dress_shoes.glb in Resources */,
+				4ABC73D82DCB9710008D9EC2 /* Sitting_female.dae in Resources */,
+				4A30FCDA2DE7C98700DE96CE /* sneakers.glb in Resources */,
+				4ABC73DE2DCBB0B4008D9EC2 /* Running_male.dae in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AB8EA052D6B88EF00B249A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABC73802DC563E2008D9EC2 /* AvatarEditorView.swift in Sources */,
+				4ABC73882DC5640A008D9EC2 /* SceneKitContainer.swift in Sources */,
+				4ABC737E2DC563D5008D9EC2 /* Animations.swift in Sources */,
+				4A3E22D82DE4A2B800773707 /* GenerateSignature.swift in Sources */,
+				4A3E22B92DDA715600773707 /* GarmentTexture.swift in Sources */,
+				4A3E22BB2DDA725500773707 /* ClothingIndex.swift in Sources */,
+				4ABC73852DC563FB008D9EC2 /* ContentView.swift in Sources */,
+				4ABC73832DC563F0008D9EC2 /* ClosetView.swift in Sources */,
+				4ABC737F2DC563DD008D9EC2 /* AppEntryView.swift in Sources */,
+				4ABC73812DC563E7008D9EC2 /* AvatarMesurments.swift in Sources */,
+				4ABC73872DC56405008D9EC2 /* GenderSelectionView.swift in Sources */,
+				4ABC738B2DC56418008D9EC2 /* UserModel.swift in Sources */,
+				4ABC73892DC56410008D9EC2 /* ShoppingView.swift in Sources */,
+				4ABC73822DC563EB008D9EC2 /* AvatarWebView.swift in Sources */,
+				4A3E22B52DD22C7D00773707 /* FitAdvisor.swift in Sources */,
+				4ABC73842DC563F4008D9EC2 /* ClothingItem.swift in Sources */,
+				4ABC738A2DC56414008D9EC2 /* SidebarButton.swift in Sources */,
+				4ABC73862DC56400008D9EC2 /* FitCheckApp.swift in Sources */,
+				4A3E22B72DDA6F1900773707 /* GarmentProcessor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4AB8EA152D6B88F100B249A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AB8EA162D6B88F100B249A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AB8EA182D6B88F100B249A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitCheck/Preview Content\"";
+				DEVELOPMENT_TEAM = TY8KS4LT37;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitCheck/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to take your avatar photo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = FitCheck;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.FitCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AB8EA192D6B88F100B249A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitCheck/Preview Content\"";
+				DEVELOPMENT_TEAM = TY8KS4LT37;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitCheck/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to take your avatar photo.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = FitCheck;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JS.FitCheck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AB8EA042D6B88EF00B249A5 /* Build configuration list for PBXProject "FitCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AB8EA152D6B88F100B249A5 /* Debug */,
+				4AB8EA162D6B88F100B249A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AB8EA172D6B88F100B249A5 /* Build configuration list for PBXNativeTarget "FitCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AB8EA182D6B88F100B249A5 /* Debug */,
+				4AB8EA192D6B88F100B249A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4ABC72492DBB211B008D9EC2 /* XCRemoteSwiftPackageReference "GLTFKit2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/warrenm/GLTFKit2";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.13;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4ABC724A2DBB211B008D9EC2 /* GLTFKit2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ABC72492DBB211B008D9EC2 /* XCRemoteSwiftPackageReference "GLTFKit2" */;
+			productName = GLTFKit2;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4AB8EA012D6B88EF00B249A5 /* Project object */;
+}
