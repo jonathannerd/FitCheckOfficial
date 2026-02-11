@@ -311,9 +311,9 @@ final class ClothingSearchViewModel: ObservableObject {
     @Published var items: [ClothingItem] = []
     
     // MARK: creds
-    private let partnerTag = "yonsher06-20"
-    private let accessKey  = "AKPACJWIR01748353402"
-    private let secretKey  = "NVoFfmVwTqkYOHh9rxEBJEzralReMsZNaUKBZBgy"
+    private let partnerTag = "partnerTag"
+    private let accessKey  = "accessKey"
+    private let secretKey  = "secretKey"
     private let lastQueryKey = "LastSearchQuery"
     
     init() {
