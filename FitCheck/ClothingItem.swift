@@ -32,7 +32,7 @@ struct AmazonItem: Codable {
             struct Large: Codable { let URL: String }
             let Large: Large
         }
-        let Variants: [Variant]?      // ← optional
+        let Variants: [Variant]?
     }
     let Images: Images
 }
@@ -60,10 +60,10 @@ struct ClothingItem: Identifiable, Codable {
     let imageUrl: String
     var colorHex: String?
 
-    let frontURL: String?    // ← NEW
-    let backURL:  String?    // ← NEW
+    let frontURL: String?
+    let backURL:  String?
 
-    let assetURL: String?    // existing
+    let assetURL: String?
     let kind:     GarmentKind
     let availableSizes: [SizeSpec]
     
@@ -81,7 +81,7 @@ struct LocalCatalog {
 
     struct Entry {
         let asset : String
-        let kind  : GarmentKind          // ← add if you do not have it yet
+        let kind  : GarmentKind
         let sizes : [ClothingItem.SizeSpec]
     }
 
@@ -101,7 +101,7 @@ struct LocalCatalog {
             Entry(asset: "suit.glb",
                   kind:  .top,
                   sizes: [])),
-        (["coat", "overcoat", "parka"],          // 🆕 COAT
+        (["coat", "overcoat", "parka"],          // COAT
             Entry(asset: "coat.glb",
                   kind:  .top,
                   sizes: [])),
@@ -119,7 +119,7 @@ struct LocalCatalog {
             Entry(asset: "dress_pants.glb",
                   kind:  .bottom,
                   sizes: [])),
-        (["cargo pant", "cargo pants", "cargo"],  // 🆕 CARGO PANTS
+        (["cargo pant", "cargo pants", "cargo"],  // CARGO PANTS
             Entry(asset: "cargo_pants.glb",
                   kind:  .bottom,
                   sizes: [])),
@@ -129,7 +129,7 @@ struct LocalCatalog {
             Entry(asset: "sneakers.glb",
                   kind:  .shoes,
                   sizes: [])),
-        (["running shoe", "running sneaker", "running"],  // 🆕 RUNNING SHOES
+        (["running shoe", "running sneaker", "running"],  // RUNNING SHOES
             Entry(asset: "running_shoes.glb",
                   kind:  .shoes,
                   sizes: [])),
@@ -145,14 +145,14 @@ struct LocalCatalog {
 
     func lookup(by title: String) -> Entry? {
 
-        let needles = tokens(from: title)                 // ← cleaned title words
+        let needles = tokens(from: title)
         guard !needles.isEmpty else { return nil }
 
         return buckets.first { bucket in
             bucket.synonyms.contains { syn in
-                let key = tokens(from: syn).first!        // each synonym is one word
+                let key = tokens(from: syn).first!
                 return needles.contains(key) ||
-                       needles.contains(key + "s")        // rudimentary plural check
+                       needles.contains(key + "s")
             }
         }?.entry
     }
@@ -380,11 +380,11 @@ final class ClothingSearchViewModel: ObservableObject {
             "Keywords"    : query,
             "SearchIndex" : "Apparel",          // ← specific CA index
             "ItemCount"   : 10,
-            "PartnerTag"  : partnerTag,         // your canadian tag
+            "PartnerTag"  : partnerTag,
             "PartnerType" : "Associates",
             "Marketplace" : "www.amazon.ca",
             "Resources"   : [
-                "Images.Primary.Medium",        // ✅ supported
+                "Images.Primary.Medium",
                 "ItemInfo.Title"
             ]
         ]
@@ -402,7 +402,7 @@ final class ClothingSearchViewModel: ObservableObject {
         // headers that must be present *and* signed
         req.setValue("amz-1.0", forHTTPHeaderField: "Content-Encoding")
         req.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
-        req.setValue(url.host!, forHTTPHeaderField: "Host")                          // ← added
+        req.setValue(url.host!, forHTTPHeaderField: "Host")
         req.setValue("com.amazon.paapi5.v1.ProductAdvertisingAPIv1.SearchItems",
                      forHTTPHeaderField: "x-amz-target")
         

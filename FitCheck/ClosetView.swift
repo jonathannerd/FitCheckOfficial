@@ -4,7 +4,6 @@ struct ClosetView: View {
     @EnvironmentObject private var userModel: UserModel
     @Environment(\.dismiss) private var dismiss
 
-    // subtle gradient – tweak the colours if you like
     private let bgGradient = LinearGradient(
         colors: [Color.teal.opacity(0.35), Color.indigo.opacity(0.45)],
         startPoint: .topLeading,
