@@ -18,7 +18,7 @@
 
 FitCheck explores a more visual way to shop for clothing online. Instead of relying only on product photos and size labels, the app lets someone build a 3D avatar, tune its measurements, and experiment with garments in a virtual fitting-room experience.
 
-The repository currently contains a functional iOS prototype. Avatar creation, 3D rendering, animations, measurement editing, and the local closet are implemented. Product search, automatic garment processing, and size advice are experimental integrations that still need production data and infrastructure.
+The repository contains a functional iOS prototype. Avatar creation, 3D rendering, animations, measurement editing, Amazon product search, and the local closet are implemented. The shopping flow was tested successfully while the original Amazon Product Advertising API account was active: users could search for clothes, save products, and add supported garments to the avatar. The credentials have since expired, so a new installation needs its own PA-API account and partner tag.
 
 ## Project tour
 
@@ -53,7 +53,7 @@ flowchart TD
 | Measurement editor | Implemented and saved locally |
 | Animations and environments | Implemented with bundled resources |
 | Digital closet | Implemented with add, remove, buy, and wear actions |
-| Shopping search | Integration scaffold; requires a secure backend and valid service configuration |
+| Shopping search | Implemented and previously tested; requires each developer's own active Amazon PA-API credentials and partner tag |
 | Garment photo processing | Experimental; requires suitable front and back product images |
 | Fit recommendation | Algorithm scaffold exists, but garment size ranges are not yet populated |
 
@@ -90,13 +90,15 @@ In Xcode:
 3. Build and run with <kbd>⌘R</kbd>.
 4. Enter a name, create an avatar, and select **Get Started**.
 
-## Shopping integration and secrets
+## Amazon shopping setup
 
-The Amazon Product Advertising API values in the current source are placeholders, so live shopping search is not enabled by default.
+The Amazon Product Advertising API values in `FitCheck/ClothingItem.swift` are currently placeholders. To enable live shopping, configure your own:
 
-Do not place live access keys or secret keys in the iOS app. A production implementation should keep credentials in a server-side secrets manager, sign Amazon requests on a backend or serverless function, and return only the data the app needs.
+- Amazon Associates partner tag
+- PA-API access key
+- PA-API secret key
 
-The **Buy** action currently opens the matching Amazon Canada product page in the browser.
+With an active account, the app signs Amazon Canada SearchItems requests, displays matching clothing, lets the user add products to the closet, maps recognized product names to bundled 3D garments, and applies supported clothing to the avatar. The **Buy** action opens the matching Amazon Canada product page in the browser.
 
 ## How the prototype is organized
 
@@ -116,6 +118,7 @@ The **Buy** action currently opens the matching Amazon Canada product page in th
 ## Known limitations
 
 - This is a prototype and has not been prepared for App Store distribution.
+- Live shopping is unavailable until the runner supplies an active PA-API account and partner tag.
 - Product-to-garment matching currently uses title keywords and a small bundled asset catalog.
 - The 3D preview is a visualization, not a guarantee of real-world fit.
 - Fit recommendations cannot be produced until garment size ranges are added.
@@ -124,7 +127,7 @@ The **Buy** action currently opens the matching Amazon Canada product page in th
 
 ## Roadmap
 
-- Move product search and Amazon request signing to a secure backend
+- Make PA-API configuration easier and improve expired-credential error messages
 - Populate size specifications and surface `FitAdvisor` recommendations in the UI
 - Improve garment-to-avatar deformation and material realism
 - Expand the garment catalog and product matching
