@@ -42,7 +42,7 @@ flowchart TD
 - Keyword-based matching between product titles and local 3D garments
 - Shopping and closet interfaces with persistent local storage
 - Experimental front/back product-image processing and texture application
-- Amazon Canada Product Advertising API request and signing scaffold
+- Amazon Canada Product Advertising API shopping integration
 
 ## Feature status
 
